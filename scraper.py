@@ -54,7 +54,7 @@ group.add_argument("--mac", "-m",
 group.add_argument("--textfile", "-t",
                     help="Runs the script against a given text file with multiple MACs. One MAC per line is expected "
                          "for ingestion")
-group.add_argument("--csvfile", "-c",
+group.add_argument("--csv", "-c",
                     help="Runs the script against a given csv file with multiple MACs. One MAC per line is expected "
                          "for ingestion")
 
@@ -62,7 +62,7 @@ args = parser.parse_args()
 mac = args.mac
 mac = str(mac).upper()
 textfile = args.textfile
-csvfile = args.csvfile
+csvfile = args.csv
 directory = args.dir
 
 if textfile:
